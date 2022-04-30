@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapasBase", "CapasBase", "{C57471A1-77CE-4659-B14D-C8467501AB45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppMovil", "AppMovil", "{6C229E2E-9382-494B-AAB7-46D8D8800942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Escritorio", "Escritorio", "{91FE2FD2-E89D-48C8-A081-BC6A16CE37BB}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CF87B2A-EA2E-4E2D-B37A-8510AE5A834A}
+	EndGlobalSection
+EndGlobal
