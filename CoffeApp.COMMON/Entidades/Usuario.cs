@@ -12,7 +12,7 @@ namespace CoffeApp.COMMON.Entidades
 
         public string Nombre { get; set; }
 
-        public string Apelliido { get; set; }
+        public string Apellido { get; set; }
 
         public string Foto { get; set; }
 
