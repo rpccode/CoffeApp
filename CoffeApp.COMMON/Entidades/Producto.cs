@@ -13,7 +13,7 @@ namespace CoffeApp.COMMON.Entidades
 
         public string Foto { get; set; }
 
-        public double Costo { get; set; }
+        public decimal Costo { get; set; }
 
         public string idCategoria { get; set; }
 

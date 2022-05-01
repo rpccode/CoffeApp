@@ -16,7 +16,7 @@ namespace CoffeApp.COMMON.Entidades
 
         public int  Cantidad { get; set; }
 
-        public double Costo { get; set; }
+        public decimal Costo { get; set; }
 
         public bool Preparando { get; set; }
 

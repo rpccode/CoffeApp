@@ -8,7 +8,7 @@ namespace CoffeApp.COMMON.Entidades
     {
         public String Nombre { get; set; }
 
-        public double Costo { get; set;}
+        public decimal Costo { get; set;}
 
         public  bool EstaEnVenta { get; set; }
 

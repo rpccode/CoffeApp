@@ -14,6 +14,6 @@ namespace CoffeApp.COMMON.Entidades
 
         public bool EsVentaMovil { get; set; }
 
-        public double Monto { get; set; }
+        public decimal Monto { get; set; }
     }
 }

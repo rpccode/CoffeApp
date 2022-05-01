@@ -7,9 +7,15 @@ namespace CoffeApp.COMMON.Entidades
     public abstract class BaseDTO : IDisposable
     {
         public String id { get; set; }
+        private bool _isDisposed;
         public void Dispose()
         {
-            throw new NotImplementedException();
+            if (!_isDisposed)
+            {
+                this._isDisposed = true;
+                GC.SuppressFinalize(this);
+            }
+                
         }
     }
 }

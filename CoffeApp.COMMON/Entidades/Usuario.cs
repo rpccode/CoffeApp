@@ -16,13 +16,13 @@ namespace CoffeApp.COMMON.Entidades
 
         public string Foto { get; set; }
 
-        public double Correo { get; set; }
+        public string Correo { get; set; }
 
         public string Telefono { get; set; }
 
         public string idTipoUsuario { get; set; }
 
-        public double Credito { get; set; }
+        public decimal Credito { get; set; }
 
         public string Nota { get; set; }
     }
