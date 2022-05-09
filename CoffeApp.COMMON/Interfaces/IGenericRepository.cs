@@ -41,10 +41,17 @@ namespace CoffeApp.COMMON.Interfaces
         /// <returns></returns>
         bool Delete(string id);
         /// <summary>
-        /// 
+        /// Ejecuta una consulta SQL sobre la tabla, regresando todos los campos de la misma
         /// </summary>
-        /// <param name="querySql"></param>
-        /// <returns></returns>
+        /// <param name="querySql">consulta Sql</param>
+        /// <returns>Conjunto de entidad que coincide con la consulta</returns>
         IEnumerable<T> Query(string querySql);
+
+        /// <summary>
+        /// Buscar una entidad  por su Id
+        /// </summary>
+        /// <param name="id">Id de la entidad  a buscar</param>
+        /// <returns>Entidad que coincide</returns>
+        T SearchById(string id);
     }
 }
