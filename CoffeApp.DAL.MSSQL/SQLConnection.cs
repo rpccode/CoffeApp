@@ -14,7 +14,7 @@ namespace CoffeApp.DAL.MSSQL
 
         public SQLConnection()
         {
-            connection = new SqlConnection("");
+            connection = new SqlConnection(@"Data Source=RUDY;Initial Catalog=CoffeApp;Persist Security Info=True;User ID=sa;Password=123456");
             conectar();
         }
 

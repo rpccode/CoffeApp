@@ -199,7 +199,7 @@ namespace CoffeApp.DAL.MSSQL
                 var campos = typeof(T).GetProperties();
                 T datos = (T)Activator.CreateInstance(typeof(T));
                 Type tTipo = typeof(T);
-                for (int i = 0; i <= campos.Length-1 ; i--)
+                for (int i = 0; i <= campos.Length-1 ; i++)
                 {
                     if (campos[i].Name == "id")
                     {

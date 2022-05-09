@@ -15,5 +15,50 @@ namespace CoffeApp.DAL.MSSQL
             return new GenericRepository<CategoriaProducto>(new CategoriaProductoValidator());
 
         }
+        public static IGenericRepository<ElementoEnMenu>
+            ElementoEnMenu()
+        {
+            return new GenericRepository<ElementoEnMenu>(new ElementoEnMenuValidator());
+        }
+        public static IGenericRepository<ElementoEnPaquete>
+          ElementoEnPaquete()
+        {
+            return new GenericRepository<ElementoEnPaquete>(new ElementoEnPaqueteValidator());
+        }
+        public static IGenericRepository<MenuComidaCorrida>
+          MenuComidaCorrida()
+        {
+            return new GenericRepository<MenuComidaCorrida>(new MenuComidaCorridaValidator());
+        }
+        public static IGenericRepository<Paquete>
+          Paquete()
+        {
+            return new GenericRepository<Paquete>(new PaqueteValidator());
+        }
+        public static IGenericRepository<Producto>
+          Prducto()
+        {
+            return new GenericRepository<Producto>(new ProductoValidator());
+        }
+        public static IGenericRepository<ProductosEnVenta>
+          ProductosEnVenta()
+        {
+            return new GenericRepository<ProductosEnVenta>(new ProductosEnVentaValidator());
+        }
+        public static IGenericRepository<TipoUsuario>
+          TipoUsuario()
+        {
+            return new GenericRepository<TipoUsuario>(new TipoUsuarioValidator());
+        }
+        public static IGenericRepository<Usuario>
+          Usuario()
+        {
+            return new GenericRepository<Usuario>(new UsuarioValidator());
+        }
+        public static IGenericRepository<Venta>
+          Venta()
+        {
+            return new GenericRepository<Venta>(new VentaValidator());
+        }
     }
 }
