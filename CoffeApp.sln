@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PruebasUnt", "PruebasUnt", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeApp.Test.DALL.MSSQL", "CoffeApp.Test.DALL.MSSQL\CoffeApp.Test.DALL.MSSQL.csproj", "{0ABFF41B-D8E5-471A-A0F0-9B9FBD813EAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeApp.WebApi", "CoffeApp.WebApi\CoffeApp.WebApi.csproj", "{FEB96946-774E-4D5D-8A2E-52AD2C153848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{0ABFF41B-D8E5-471A-A0F0-9B9FBD813EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ABFF41B-D8E5-471A-A0F0-9B9FBD813EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ABFF41B-D8E5-471A-A0F0-9B9FBD813EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB96946-774E-4D5D-8A2E-52AD2C153848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB96946-774E-4D5D-8A2E-52AD2C153848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB96946-774E-4D5D-8A2E-52AD2C153848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB96946-774E-4D5D-8A2E-52AD2C153848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{F36BC06B-108A-4F9D-A00E-BFD3FFE1A0DF} = {C57471A1-77CE-4659-B14D-C8467501AB45}
 		{EEDE407D-A062-47D2-914A-D7ABF9553E29} = {C57471A1-77CE-4659-B14D-C8467501AB45}
 		{0ABFF41B-D8E5-471A-A0F0-9B9FBD813EAA} = {460B50FE-75BF-47A5-A6D5-36640AC35635}
+		{FEB96946-774E-4D5D-8A2E-52AD2C153848} = {F15DD87B-879F-43E5-A511-54BB177DB65D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CF87B2A-EA2E-4E2D-B37A-8510AE5A834A}
