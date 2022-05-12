@@ -13,7 +13,7 @@ namespace CoffeApp.COMMON.Validadores
             RuleFor(m => m.Nombre).NotNull().NotEmpty().MaximumLength(100);
             RuleFor(m => m.Foto).NotNull().NotEmpty().MaximumLength(50);
             RuleFor(m => m.Costo).NotNull().NotEmpty().GreaterThan(0);
-            RuleFor(m => m.EstaEnVenta).NotNull().NotEmpty();
+            RuleFor(m => m.EstaEnVenta).NotNull();
             RuleFor(m => m.Descripcion).NotNull().NotEmpty();
 
 

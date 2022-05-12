@@ -18,8 +18,8 @@ namespace CoffeApp.COMMON.Validadores
             RuleFor(u => u.Correo).NotNull().NotEmpty().MaximumLength(50).EmailAddress();
             RuleFor(u => u.Telefono).NotNull().NotEmpty().MaximumLength(50);
             RuleFor(u => u.idTipoUsuario).NotNull().NotEmpty().MaximumLength(50);
-            RuleFor(u => u.Credito).NotNull().NotEmpty().GreaterThanOrEqualTo(0);
-            RuleFor(u => u.Nota).NotNull().NotEmpty();
+            RuleFor(u => u.Credito).GreaterThanOrEqualTo(0);
+         
 
 
         }

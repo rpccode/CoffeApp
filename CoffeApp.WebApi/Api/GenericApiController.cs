@@ -1,5 +1,6 @@
 ﻿using CoffeApp.COMMON.Entidades;
 using CoffeApp.COMMON.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,6 +12,7 @@ namespace CoffeApp.WebApi.Api
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public abstract class GenericApiController<T> : ControllerBase where T:BaseDTO
     {
         readonly IGenericRepository<T> repository;

@@ -77,6 +77,9 @@ namespace CoffeApp.DAL.MSSQL
                             sql2 += $"'{dateTime.Year}-{dateTime.Month}-{dateTime.Day} {dateTime.Hour}: " +
                                 $"{dateTime.Minute}: {dateTime.Second}'";
                             break;
+                        case "Booleand":
+                            sql2 += (bool)valor ? "1" : "0";
+                            break;
                         default:
                             sql2 += " " + valor;
                             break;
@@ -222,6 +225,9 @@ namespace CoffeApp.DAL.MSSQL
                                 sql += $"'{dateTime.Year}-{dateTime.Month}-{dateTime.Day} {dateTime.Hour}: " +
                                     $"{dateTime.Minute}: {dateTime.Second}'";
                                 break;
+                            case "Booleand":
+                                sql2 += (bool)valor ? "1" : "0";
+                                break;
                             default:
                                 sql += " " + valor;
                                 break;
@@ -236,6 +242,11 @@ namespace CoffeApp.DAL.MSSQL
                     }
                    
 
+                }
+                char ultimo = sql1.Last();
+                if(ultimo == ',')
+                {
+                    sql1 = sql1.Substring(0, sql1.Length - 1);
                 }
                 if (db.Comando(sql1 + " " + sql2 ) == 1)
                 {

@@ -8,4 +8,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeApp.COMMON\CoffeApp.COMMON.csproj" />
+    <ProjectReference Include="..\CoffeApp.DAL.MSSQL\CoffeApp.DAL.MSSQL.csproj" />
+  </ItemGroup>
+
 </Project>

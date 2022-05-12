@@ -1,6 +1,7 @@
 ﻿using CoffeApp.COMMON.Entidades;
 using CoffeApp.COMMON.Interfaces;
 using CoffeApp.DAL.MSSQL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ namespace CoffeApp.WebApi.Api
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class PaqueteController : GenericApiController<Paquete>
     {
         public PaqueteController() : base(FabricRepository.Paquete())
@@ -19,4 +21,4 @@ namespace CoffeApp.WebApi.Api
         }
     }
 }
-}
+

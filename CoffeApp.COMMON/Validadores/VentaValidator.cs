@@ -13,7 +13,7 @@ namespace CoffeApp.COMMON.Validadores
             RuleFor(v => v.FechaHora).NotEmpty().NotNull();
             RuleFor(v => v.idCliente).NotEmpty().NotNull().MaximumLength(50);
             RuleFor(v => v.idVendedor).NotEmpty().NotNull().MaximumLength(50);
-            RuleFor(v => v.EsVentaMovil).NotEmpty().NotNull();
+            RuleFor(v => v.EsVentaMovil).NotNull();
             RuleFor(v => v.Monto).NotEmpty().NotNull().GreaterThan(0);
 
 
